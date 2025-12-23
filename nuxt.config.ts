@@ -20,7 +20,7 @@ export default defineNuxtConfig({
       title: 'AMO Montpellier - Club de Modélisme RC',
       meta: [
         { name: 'description', content: 'Association Modéliste Occitane (AMO) - AMO Montpellier - Club de modélisme radiocommandé à Montpellier. Courses de voitures RC 1/8, 1/10, GT8, compétitions FFVRC.' },
-        { name: 'keywords', content: 'AMO Montpellier, modélisme RC, voitures radiocommandées, FFVRC, course RC, 1/8, 1/10, GT8, club modélisme Montpellier' },
+        { name: 'keywords', content: 'AMO Montpellier, modélisme RC, modélisme Montpellier, voitures radiocommandées, FFVRC, course RC, 1/8, 1/10, GT8, club modélisme Montpellier' },
         { name: 'author', content: 'AMO Montpellier' },
         { name: 'robots', content: 'index, follow' },
 
