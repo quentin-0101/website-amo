@@ -24,7 +24,7 @@ import amoPiste from '~/assets/images/amo_piste.webp'
         </h1>
         
         <p class="text-xl md:text-2xl text-gray-300 font-light mb-10 max-w-3xl mx-auto leading-relaxed">
-          Le club de référence pour l'auto-modélisme piste <br class="hidden md:block"/>
+          Association Modéliste Occitane - Club modélisme piste <br class="hidden md:block"/>
           <span class="font-normal text-yellow-400">1/4 • 1/5 • 1/8 • GT8 • 1/10</span>
         </p>
 
