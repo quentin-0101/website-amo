@@ -36,7 +36,7 @@
             </h3>
             <div class="text-gray-600 space-y-4 leading-relaxed text-base">
               <p>L' AMO, Association Modéliste Occitane, est une association loi 1901, affiliée à la FFVRC sous le N° 08, ce qui en fait un des plus anciens clubs de France ayant adhéré à la Fédération.</p>
-              <p>Installé sur la piste municipale d' auto-modélisme du <span class="font-semibold text-amo-primary">Parc de GRAMMONT</span>, à deux pas de l' entrée de l' autoroute A9, le club accueille et développe la pratique de la voiture radiocommandée en loisir et en compétition pour les jeunes et les adultes.</p>
+              <p>Installé sur la piste municipale d' auto-modélisme du <span class="font-semibold text-amo-primary">Parc de GRAMMONT VILLE DE MONTPELLIER</span>, à deux pas de l' entrée de l' autoroute A9, le club accueille et développe la pratique de la voiture radiocommandée en loisir et en compétition pour les jeunes et les adultes.</p>
               <p>La météo quasi toujours ensoleillée, et la qualité de la piste et des installations permettent à tous les membres de pratiquer leur passion tous les jours de l'année.</p>
             </div>
           </div>
