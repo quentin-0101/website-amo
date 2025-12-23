@@ -1,5 +1,30 @@
 <script setup>
 import pisteImage from '~/assets/images/amo_piste.webp'
+
+useSeoMeta({
+  title: 'Documents Club - AMO Montpellier',
+  description: 'Téléchargez les documents du club AMO Montpellier : bulletin d\'adhésion 2026 et paiement en ligne via PayPal.',
+  ogTitle: 'Documents Club - AMO Montpellier',
+  ogDescription: 'Téléchargez les documents du club AMO Montpellier : bulletin d\'adhésion 2026 et paiement en ligne via PayPal.',
+  ogImage: 'https://amo-montpellier.fr/images/amo_piste.webp',
+  ogUrl: 'https://amo-montpellier.fr/documents',
+  twitterTitle: 'Documents Club - AMO Montpellier',
+  twitterDescription: 'Téléchargez les documents du club AMO Montpellier : bulletin d\'adhésion 2026 et paiement en ligne via PayPal.',
+  twitterImage: 'https://amo-montpellier.fr/images/amo_piste.webp',
+  twitterCard: 'summary_large_image'
+})
+
+useHead({
+  htmlAttrs: {
+    lang: 'fr'
+  },
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://amo-montpellier.fr/documents'
+    }
+  ]
+})
 </script>
 
 <template>
