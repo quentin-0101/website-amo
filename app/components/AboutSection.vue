@@ -125,7 +125,7 @@
                   <div class="text-sm text-gray-300">Pilotes</div>
                 </div>
                 <div class="bg-white/10 backdrop-blur-md rounded-2xl p-4 text-center">
-                  <div class="text-3xl font-bold text-blue-400">4</div>
+                  <div class="text-3xl font-bold text-blue-400">5</div>
                   <div class="text-sm text-gray-300">Catégories</div>
                 </div>
               </div>
