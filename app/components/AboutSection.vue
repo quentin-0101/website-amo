@@ -137,7 +137,7 @@
         <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
            <h3 class="text-2xl font-bold mb-8 text-center">Reportages RC 2023</h3>
            <div class="flex flex-wrap justify-center gap-8">
-                <a href="https://boerimodelisme.fr/courses/challenge-mrtp-montpellier-3-decembre-2023/" target="_blank" 
+                <a href="https://boerimodelisme.fr/courses/challenge-mrtp-montpellier-3-decembre-2023/" target="_blank" rel="noopener noreferrer"
                    class="group block relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-[400px]">
                     <img src="~/assets/images/reportages/mrtp.jpg" alt="Reportage MRTP" class="w-full h-auto transition-transform duration-500 group-hover:scale-105">
                     <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -145,7 +145,7 @@
                     </div>
                 </a>
                 
-                <a href="https://boerimodelisme.fr/courses/2eme-cf-piste-1-5-montpellier-amo/" target="_blank"
+                <a href="https://boerimodelisme.fr/courses/2eme-cf-piste-1-5-montpellier-amo/" target="_blank" rel="noopener noreferrer"
                    class="group block relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-[400px]">
                     <img src="~/assets/images/reportages/1-5.jpg" alt="Reportage 1/5" class="w-full h-auto transition-transform duration-500 group-hover:scale-105">
                      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
