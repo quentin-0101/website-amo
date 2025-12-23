@@ -1,5 +1,5 @@
 <script setup>
-import pisteImage from '~/assets/images/amo_piste.jpg'
+import pisteImage from '~/assets/images/amo_piste.webp'
 </script>
 
 <template>
