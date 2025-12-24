@@ -48,7 +48,7 @@ const races = [
     <div class="container mx-auto px-4 text-center relative z-10">
       <div class="max-w-6xl mx-auto">
         <div class="heading mb-16">
-          <h2 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-white">Calendrier - Courses Officielles 2024-2025</h2>
+          <h2 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-white">Calendrier - Courses Officielles 2025-2026</h2>
           <div class="w-20 h-1 bg-gradient-to-r from-amo-gold to-amo-gold-glow mx-auto rounded-full"></div>
           <p class="mt-6 text-gray-400 max-w-2xl mx-auto text-lg">Les grands rendez-vous de la saison sur notre piste.</p>
         </div>
