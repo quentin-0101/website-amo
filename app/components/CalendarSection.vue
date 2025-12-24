@@ -2,10 +2,10 @@
 const races = [
   {
     title: 'GPRC',
-    date: '27-28-29 Février 2025',
+    date: '27-28-29 Février 2026',
     month: 'FÉV',
     day: '27-29',
-    year: '2025',
+    year: '2026',
     type: 'Compétition Internationale',
     categories: '1/5 et GT8',
     official: false,
@@ -14,10 +14,10 @@ const races = [
   },
   {
     title: 'Championnat de France',
-    date: '27-28-29 Mars 2025',
+    date: '27-28-29 Mars 2026',
     month: 'MARS',
     day: '27-29',
-    year: '2025',
+    year: '2026',
     type: 'Championnat de France',
     categories: '1/5',
     official: true,
@@ -26,10 +26,10 @@ const races = [
   },
   {
     title: 'Course de Ligue',
-    date: '26 Avril 2025',
+    date: '26 Avril 2026',
     month: 'AVR',
     day: '26',
-    year: '2025',
+    year: '2026',
     type: 'Course Régionale',
     categories: '1/10 - 1/8 - GT8',
     official: true,
