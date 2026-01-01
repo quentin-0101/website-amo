@@ -1,5 +1,6 @@
 <template>
   <div class="font-sans antialiased text-gray-800">
+    <WelcomeModal />
     <AppHeader />
     
     <main>
