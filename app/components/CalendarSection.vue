@@ -27,8 +27,8 @@ const races = [
   {
     title: 'Course de Ligue',
     date: '31 Mai 2026',
-    month: 'AVR',
-    day: '26',
+    month: 'MAI',
+    day: '31',
     year: '2026',
     type: 'Course Régionale',
     categories: '1/10 - 1/8',
