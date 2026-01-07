@@ -26,12 +26,12 @@ const races = [
   },
   {
     title: 'Course de Ligue',
-    date: '26 Avril 2026',
-    month: 'AVR',
-    day: '26',
+    date: '31 Mai 2026',
+    month: 'MAI',
+    day: '31',
     year: '2026',
     type: 'Course Régionale',
-    categories: '1/10 - 1/8 - GT8',
+    categories: '1/10 - 1/8',
     official: true,
     description: 'Officiel FFVRC',
     color: 'from-orange-500 to-amber-500'
