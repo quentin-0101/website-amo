@@ -49,7 +49,7 @@ useHead({
           <div class="space-y-6">
              <div class="p-4 border border-gray-200 rounded bg-gray-50 flex items-center hover:shadow-md transition-shadow">
                <i class="fa fa-file-pdf-o text-red-600 text-3xl mr-4"></i>
-               <a href="/images/adhesion_officielle_2026_amo.pdf" target="_blank" class="text-lg font-semibold hover:text-amo-blue">
+               <a href="/images/adhesion.pdf" target="_blank" class="text-lg font-semibold hover:text-amo-blue">
                  Bulletin d'adhésion 2026 AMO
                </a>
              </div>
