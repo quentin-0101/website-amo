@@ -1,6 +1,18 @@
 <script setup>
 const races = [
   {
+    title: 'MRTP',
+    date: 'Dimanche 25 Janvier 2026',
+    month: 'JAN',
+    day: '25',
+    year: '2026',
+    type: 'Challenge',
+    categories: '1/10 & GT8',
+    official: false,
+    description: 'Challenge',
+    color: 'from-blue-500 to-cyan-500'
+  },
+  {
     title: 'GPRC',
     date: '27-28-29 Février 2026',
     month: 'FÉV',
@@ -24,6 +36,7 @@ const races = [
     description: 'Officiel FFVRC',
     color: 'from-red-600 to-red-500'
   },
+/*
   {
     title: 'Course de Ligue',
     date: '31 Mai 2026',
@@ -36,6 +49,7 @@ const races = [
     description: 'Officiel FFVRC',
     color: 'from-orange-500 to-amber-500'
   }
+*/
 ]
 </script>
 
