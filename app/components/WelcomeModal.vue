@@ -9,8 +9,8 @@
             </svg>
           </button>
           <img 
-            src="~/assets/images/porte_ouverte.jpg" 
-            alt="Porte Ouverte AMO Montpellier"
+            src="~/assets/images/affiche_ligue_11_octobre_2026.jpg"
+            alt="Affiche Course de Ligue AMO Montpellier - 11 octobre 2026"
             class="modal-image"
           />
         </div>

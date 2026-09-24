@@ -9,7 +9,7 @@ const races = [
     type: 'Course Régionale',
     categories: [
       '1/10 DTM 13.5T',
-      '1/10 Pancar 13.5T',
+      '1/10 Pancar 13.5T STOCK',
       '1/8 4x4 Électrique et Thermique',
       'GT8 Électrique'
     ],
