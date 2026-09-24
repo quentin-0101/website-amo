@@ -1,40 +1,33 @@
 <script setup>
 const races = [
   {
-    title: 'GPRC',
-    date: '27-28-29 Février 2026',
-    month: 'FÉV',
-    day: '27-29',
-    year: '2026',
-    type: 'Compétition Internationale',
-    categories: '1/5 et GT8',
-    official: false,
-    description: 'Pilotes européens',
-    color: 'from-purple-500 to-pink-500'
-  },
-  {
-    title: 'Championnat de France',
-    date: '27-28-29 Mars 2026',
-    month: 'MARS',
-    day: '27-29',
-    year: '2026',
-    type: 'Championnat de France',
-    categories: '1/5',
-    official: true,
-    description: 'Officiel FFVRC',
-    color: 'from-red-600 to-red-500'
-  },
-  {
     title: 'Course de Ligue',
-    date: '31 Mai 2026',
-    month: 'MAI',
-    day: '31',
+    date: '11 Octobre 2026',
+    month: 'OCT',
+    day: '11',
     year: '2026',
     type: 'Course Régionale',
-    categories: '1/10 - 1/8',
+    categories: [
+      '1/10 DTM 13.5T',
+      '1/10 Pancar 13.5T',
+      '1/8 4x4 Électrique et Thermique',
+      'GT8 Électrique'
+    ],
     official: true,
     description: 'Officiel FFVRC',
     color: 'from-orange-500 to-amber-500'
+  },
+  {
+    title: 'Coupe de France 1/8 4x4',
+    date: '23-24-25 Octobre 2026',
+    month: 'OCT',
+    day: '23-25',
+    year: '2026',
+    type: 'Coupe de France',
+    categories: ['1/8 4x4 Électrique et Thermique'],
+    official: true,
+    description: 'Officiel FFVRC',
+    color: 'from-red-600 to-red-500'
   }
 ]
 </script>
@@ -48,13 +41,13 @@ const races = [
     <div class="container mx-auto px-4 text-center relative z-10">
       <div class="max-w-6xl mx-auto">
         <div class="heading mb-16">
-          <h2 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-white">Calendrier - Courses Officielles 2025-2026</h2>
+          <h2 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-white">Calendrier - Courses Officielles 2026-2027</h2>
           <div class="w-20 h-1 bg-gradient-to-r from-amo-gold to-amo-gold-glow mx-auto rounded-full"></div>
           <p class="mt-6 text-gray-400 max-w-2xl mx-auto text-lg">Les grands rendez-vous de la saison sur notre piste.</p>
         </div>
         
         <!-- Race Cards -->
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div v-for="(race, index) in races" :key="index" 
                class="group relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 hover:border-gray-300 transition-all duration-300 hover:transform hover:scale-105 shadow-xl">
             <!-- Date Badge -->
@@ -93,9 +86,11 @@ const races = [
                   <i class="fa fa-map-marker w-5 text-orange-600"></i>
                   <span class="text-sm font-medium">Parc de Grammont, Montpellier</span>
                 </div>
-                <div class="flex items-center gap-3 text-gray-700">
-                  <i class="fa fa-trophy w-5 text-orange-600"></i>
-                  <span class="text-sm font-medium">{{ race.categories }}</span>
+                <div class="flex items-start gap-3 text-gray-700">
+                  <i class="fa fa-trophy w-5 text-orange-600 mt-0.5"></i>
+                  <ul class="text-sm font-medium space-y-1">
+                    <li v-for="category in race.categories" :key="category">{{ category }}</li>
+                  </ul>
                 </div>
               </div>
             </div>
