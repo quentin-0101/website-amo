@@ -26,3 +26,4 @@ logs
 pnpm-lock.yaml
 
 ./node_modules
+node_modules/
