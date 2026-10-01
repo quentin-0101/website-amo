@@ -1,45 +1,22 @@
 <template>
-  <div class="font-sans antialiased text-gray-800">
-    <WelcomeModal />
-    <AppHeader />
-    
-    <main>
-      <HeroSection />
-      <AboutSection />
-      <LocationSection />
-      <CalendarSection />
-      <ContactSection />
-    </main>
-    
-    <AppFooter />
-  </div>
+  <main>
+    <HeroSection />
+    <AboutSection />
+    <LocationSection />
+    <CalendarSection />
+    <ContactSection />
+  </main>
 </template>
 
 <script setup>
-// Components are auto-imported by Nuxt
+import { upcomingRaces } from '~/data/races'
 
-useSeoMeta({
-  title: 'AMO Montpellier - Club de Modélisme RC | Accueil',
-  description: 'Découvrez l\'Association Modéliste Occitane, AMO Montpellier, club de modélisme radiocommandé à Montpellier. Courses, compétitions FFVRC, GT8, 1/8, 1/10.',
-  ogTitle: 'AMO Montpellier - Club de Modélisme RC',
-  ogDescription: 'Découvrez l\'Association Modéliste Occitane, AMO Montpellier, club de modélisme radiocommandé à Montpellier.',
-  ogImage: 'https://amo-montpellier.fr/images/amo_piste.webp',
-  ogUrl: 'https://amo-montpellier.fr/',
-  twitterTitle: 'AMO Montpellier - Club de Modélisme RC',
-  twitterDescription: 'Découvrez l\'Association Modéliste Occitane, AMO Montpellier, club de modélisme radiocommandé à Montpellier.',
-  twitterImage: 'https://amo-montpellier.fr/images/amo_piste.webp',
-  twitterCard: 'summary_large_image'
-})
+const title = 'Club de modélisme RC à Montpellier – Piste de Grammont | AMO'
+const description = 'Club de voitures radiocommandées sur piste à Montpellier depuis 1978 : piste du parc de Grammont, courses FFVRC 1/10, 1/8, GT8, 1/5, loisir et compétition.'
 
-useHead({
-  htmlAttrs: {
-    lang: 'fr'
-  },
-  link: [
-    {
-      rel: 'canonical',
-      href: 'https://amo-montpellier.fr/'
-    }
-  ]
-})
+useSeoPage({ title, description, path: '/' })
+useSchemaGraph([
+  webPageNode('/', title, description),
+  ...upcomingRaces().map(eventNode),
+])
 </script>

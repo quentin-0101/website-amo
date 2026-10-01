@@ -1,0 +1,48 @@
+# Build context for Dockerfile (dev) and Dockerfile-prod.
+# The build only needs: package.json, yarn.lock, nuxt.config.ts, tsconfig.json,
+# postcss/tailwind configs, app/, server/ and public/.
+
+# Dependencies and build outputs: reinstalled / rebuilt inside the image.
+# Copying the host node_modules would overwrite the Linux binaries installed by `yarn install`.
+node_modules
+.nuxt
+.output
+.nitro
+.cache
+.data
+dist
+
+# Version control, CI, editors, OS files
+.git
+.gitignore
+.github
+.idea
+.vscode
+.fleet
+.claude
+.DS_Store
+*.log
+
+# Docker files themselves
+Dockerfile
+Dockerfile-prod
+docker-compose.yaml
+.dockerignore
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Not used by the build (yarn.lock is the lockfile used by the Dockerfiles)
+package-lock.json
+README.md
+amo-montpellier.fr-audit
+
+# Large media that nothing imports (Vite only bundles imported assets, these would just bloat the context)
+app/assets/images/*.mp4
+app/assets/images/amo_piste.jpg
+app/assets/images/bg.png
+
+# Never served by Nuxt (the public dir is ./public, not app/public)
+app/public

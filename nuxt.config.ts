@@ -1,9 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   srcDir: 'app/',
-  modules: [
-    '@nuxt/content',
-  ],
   postcss: {
     plugins: {
       '@tailwindcss/postcss': {},
@@ -17,34 +14,31 @@ export default defineNuxtConfig({
       },
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'AMO Montpellier - Club de Modélisme RC',
+      // Defaults only: every page sets its own title, description, canonical and Open Graph tags (useSeoPage).
+      title: 'AMO Montpellier - Club de voitures radiocommandées',
       meta: [
-        { name: 'description', content: 'Association Modéliste Occitane (AMO) - AMO Montpellier - Club de modélisme radiocommandé à Montpellier. Courses de voitures RC 1/8, 1/10, GT8, compétitions FFVRC.' },
-        { name: 'keywords', content: 'AMO Montpellier, modélisme RC, modélisme Montpellier, voitures radiocommandées, FFVRC, course RC, 1/8, 1/10, GT8, club modélisme Montpellier' },
-        { name: 'author', content: 'AMO Montpellier' },
-        { name: 'robots', content: 'index, follow' },
-
-        // Open Graph / Facebook
-        { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://amo-montpellier.fr/' },
-        { property: 'og:title', content: 'AMO Montpellier - Club de Modélisme RC' },
-        { property: 'og:description', content: 'Association Modéliste Occitane (AMO) - Club de modélisme radiocommandé à Montpellier.' },
-        { property: 'og:image', content: 'https://amo-montpellier.fr/images/amo_piste.webp' },
-        { property: 'og:locale', content: 'fr_FR' },
-
-        // Twitter
-        { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'AMO Montpellier - Club de Modélisme RC' },
-        { name: 'twitter:description', content: 'Association Modéliste Occitane (AMO) - Club de modélisme radiocommandé à Montpellier.' },
-        { name: 'twitter:image', content: 'https://amo-montpellier.fr/images/amo_piste.webp' },
+        { name: 'description', content: 'Association Modéliste Occitane (AMO Montpellier), club de voitures radiocommandées sur piste au parc de Grammont à Montpellier.' },
+        { name: 'theme-color', content: '#0f172a' },
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'canonical', href: 'https://amo-montpellier.fr/' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap' },
-        { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' }
-      ]
+        { rel: 'icon', href: '/favicon.ico', sizes: '48x48' },
+        { rel: 'icon', type: 'image/png', href: '/favicon-96x96.png', sizes: '96x96' },
+        { rel: 'apple-touch-icon', href: '/apple-touch-icon.png', sizes: '180x180' },
+      ],
     }
+  },
+  routeRules: {
+    '/**': { headers: { 'strict-transport-security': 'max-age=31536000' } },
+    '/images/**': { headers: { 'cache-control': 'public, max-age=86400' } },
+  },
+  hooks: {
+    // Images imported from ~/assets would otherwise be announced as <link rel="prefetch"> on every page.
+    // Each page already references the images it displays, so drop those hints.
+    'build:manifest': (manifest) => {
+      for (const chunk of Object.values(manifest)) {
+        chunk.assets = chunk.assets?.filter(file => !/\.(?:png|jpe?g|webp|avif|gif|svg)$/i.test(file))
+      }
+    },
   },
   css: ['~/assets/css/main.css'],
   devtools: { enabled: true },
