@@ -39,6 +39,9 @@ jobs:
           sbom: true
           provenance: true
           network: host
+          # Reuse Docker layers between runs: `yarn install` only re-runs when package.json or yarn.lock change.
+          cache-from: type=gha
+          cache-to: type=gha,mode=max,ignore-error=true
 
       - name: SSH to production server
         uses: appleboy/ssh-action@master

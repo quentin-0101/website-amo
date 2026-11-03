@@ -2,12 +2,14 @@
 // - www.amo-montpellier.fr -> amo-montpellier.fr
 // - trailing slash removed (/adhesion/ -> /adhesion)
 // - legacy URLs from the previous site (documents.html, 2024 membership PDF) -> /adhesion
+// - race pages whose slug changed with the race date
 const CANONICAL_HOST = 'amo-montpellier.fr'
 
 const LEGACY: Record<string, string> = {
   '/documents': '/adhesion',
   '/documents.html': '/adhesion',
   '/index.html': '/',
+  '/courses/challenge-inter-club-1-5-1-4-15-novembre-2026': '/courses/challenge-inter-club-1-5-1-4-22-novembre-2026',
 }
 
 export default defineEventHandler((event) => {
